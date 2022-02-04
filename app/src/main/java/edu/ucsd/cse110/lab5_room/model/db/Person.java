@@ -4,8 +4,6 @@ import androidx.room.ColumnInfo;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 
-
-
 @Entity(tableName = "persons")
 public class Person {
 
@@ -17,3 +15,6 @@ public class Person {
     public String name;
 
 }
+
+
+

@@ -19,6 +19,11 @@ public class PersonWithNotes implements IPerson {
 
 
     @Override
+    public int getId() {
+        return this.person.personId;
+    }
+
+    @Override
     public String getName() {
         return this.person.name;
     }
@@ -28,4 +33,5 @@ public class PersonWithNotes implements IPerson {
         return this.notes;
     }
 }
+
 

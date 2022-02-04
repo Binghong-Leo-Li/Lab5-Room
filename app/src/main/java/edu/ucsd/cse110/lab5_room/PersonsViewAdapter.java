@@ -63,8 +63,7 @@ public class PersonsViewAdapter extends RecyclerView.Adapter<PersonsViewAdapter.
         public void onClick(View view) {
             Context context = view.getContext();
             Intent intent = new Intent(context, PersonDetailActivity.class);
-            intent.putExtra("person_name", this.person.getName());
-            intent.putExtra("person_notes", this.person.getNotes().toArray(new String[0]));
+            intent.putExtra("person_id", this.person.getId());
             context.startActivity(intent);
         }
     }
