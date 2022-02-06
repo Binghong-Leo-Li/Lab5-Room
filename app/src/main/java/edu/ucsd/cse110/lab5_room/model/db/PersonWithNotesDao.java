@@ -16,7 +16,7 @@ public interface PersonWithNotesDao {
     @Query("SELECT * FROM persons WHERE id=:id")
     PersonWithNotes get(int id);
 
-    @Query("SELECT COUNT(*) from persons")
+    @Query("SELECT COUNT(*) from notes")
     int count();
 
 }

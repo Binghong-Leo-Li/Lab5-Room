@@ -15,6 +15,7 @@ public class PersonWithNotes implements IPerson {
             entityColumn = "person_id",
             entity = Note.class,
             projection = {"text"})
+
     public List<String> notes;
 
 

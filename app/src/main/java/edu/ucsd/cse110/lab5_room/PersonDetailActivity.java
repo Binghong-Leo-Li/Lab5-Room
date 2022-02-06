@@ -29,7 +29,7 @@ public class PersonDetailActivity extends AppCompatActivity {
         String[] personNotes = intent.getStringArrayExtra("person_notes");
 
         setTitle(personName);
-        personNotesView.setText(String.join("\n", personNotes));
+        personNotesView.setText(String.join("\n", person.getNotes()));
     }
 
     public void onGoBackClicked(View view) {
